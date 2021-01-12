@@ -1,0 +1,19 @@
+server:
+  port: 8081
+  error:
+    include-message: always
+
+spring:
+  main:
+    banner-mode: off
+
+resource-server:
+  publicKeyUri: http://localhost:8080/public-key
+
+logging:
+  level:
+    org.springframework.context: ERROR
+    org.springframework.boot.web.servlet.context: ERROR
+    org.springframework.scheduling.concurrent: ERROR
+    org.springframework.boot.autoconfigure.security.servlet: ERROR
+    org.apache: ERROR

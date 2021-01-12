@@ -1,0 +1,20 @@
+bdk:
+  host: develop2.symphony.com
+  bot:
+    username: ys-bot
+    privateKey:
+      path: bot/rsa/user-bot-private.pem
+
+bot:
+  auth-server-uri: http://localhost:8080
+  resource-server-uri: http://localhost:8081
+
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    org.springframework.context: ERROR
+    org.springframework.cloud.commons.util: ERROR
+    org.springframework.cloud.context.scope: ERROR

@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  error:
+    include-message: always
+
+bdk:
+  host: develop2.symphony.com
+  bot:
+    username: ys-bot
+    privateKey:
+      path: auth-server/rsa/auth-bot-private.pem
+  datafeed:
+    enabled: false
+
+auth-server:
+  privateKey: auth-server/rsa/sign-private.pem
+  publicKey: auth-server/rsa/sign-public.pem
+
+spring:
+  main:
+    banner-mode: off
+
+logging:
+  level:
+    org.springframework.context: ERROR
+    org.springframework.boot.web.servlet.context: ERROR
+    org.springframework.scheduling.concurrent: ERROR
+    org.apache: ERROR
